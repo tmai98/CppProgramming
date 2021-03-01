@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Tien"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2017-01-15 12:34:29 AM"/>
+        <attribute name="created" value="VGllbjsgVElFTi1QQzsgMjAxNy0wMS0xNDsgMTA6Mjc6MTYgUE07IDIyNjk="/>
+        <attribute name="edited" value="VGllbjsgVElFTi1QQzsgMjAxNy0wMS0xNTsgMTI6MzQ6MjkgQU07IDIyNTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Power" type="String" array="False" size="" variables="Power"/>
+            <output expression="&quot;Are you powerful?&quot;"/>
+            <input variable="Power"/>
+            <if expression="Power == &quot;y&quot;">
+                <then>
+                    <output expression="&quot;Hello Universe!&quot;"/>
+                </then>
+                <else>
+                    <output expression="&quot;Hello World!&quot;"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

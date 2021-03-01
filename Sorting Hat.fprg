@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.0">
+    <attributes>
+        <attribute name="name" value="Harry Potter - Sorting Hat"/>
+        <attribute name="authors" value="Devin Cook"/>
+        <attribute name="about" value="J.K. Rowling created an intricate world in the Harry Potter series. In the books (and movie) new students, arriving at Hogwarts, are sorted into one of the four houses. This program attempts to capture the essence of the houses and demonstrate nested If Statements. I hope she doesn't mind."/>
+        <attribute name="saved" value="8/2/2014 12:00:24 PM"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare variables="power" type="String"/>
+            <declare variables="selfish" type="String"/>
+            <declare variables="analytical" type="String"/>
+            <output expression="&quot;Welcome to Hogwarts.&quot;"/>
+            <output expression="&quot;The Sorting Hat is placed upon your head and a voice echoes in your mind....&quot;"/>
+            <output expression="&quot;Do you seek power? (y/n)&quot;"/>
+            <input variable="power"/>
+            <if expression="power == &quot;y&quot;">
+                <then>
+                    <output expression="&quot;Are you selfish (y/n)&quot;"/>
+                    <input variable="selfish"/>
+                    <if expression="selfish == &quot;y&quot;">
+                        <then>
+                            <output expression="&quot;Slytherin!&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Gryffindor!&quot;"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Are you analytical (y/n)&quot;"/>
+                    <input variable="analytical"/>
+                    <if expression="analytical == &quot;y&quot;">
+                        <then>
+                            <output expression="&quot;Ravenclaw!&quot;"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Hufflepuff!&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Susan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-01-07 07:43:49 AM"/>
+        <attribute name="created" value="U3VzYW47IE1FRExJTkxBUFRPUDsgMjAxNi0wMS0wNzsgMDc6MDQ6MjcgQU07IDI3ODk="/>
+        <attribute name="edited" value="U3VzYW47IE1FRExJTkxBUFRPUDsgMjAxNi0wMS0wNzsgMDc6NDM6NDkgQU07IDI3OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This program demonstrates how to calculate payroll."/>
+            <comment text="Declare variables. Real is a double data type in Java and C++."/>
+            <declare name="name" type="String" array="False" size="" variables="name"/>
+            <declare name="hours" type="Real" array="False" size="" variables="hours"/>
+            <declare name="payRate" type="Real" array="False" size="" variables="payRate"/>
+            <declare name="grossPay" type="Real" array="False" size="" variables="grossPay"/>
+            <comment text="Get input from the user."/>
+            <output expression="&quot;What is your name?&quot;"/>
+            <input variable="name"/>
+            <output expression="&quot;How many hours did you work this week?&quot;"/>
+            <input variable="hours"/>
+            <output expression="&quot;What is your hourly pay rate? &quot;"/>
+            <input variable="payRate"/>
+            <comment text="Calculate the gross pay."/>
+            <assign variable="grossPay" expression="hours * payRate"/>
+            <comment text="Output the gross pay."/>
+            <output expression="&quot;Hello &quot; &amp;name &amp; &quot;. Your gross pay is $&quot; &amp;grossPay &amp; &quot;.&quot;"/>
+        </body>
+    </function>
+</flowgorithm>
